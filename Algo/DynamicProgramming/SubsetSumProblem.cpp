@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool SubsetSumProblem(vector<int> Coins, int Sum)
+bool SubsetSumProblem(const vector<int> & Coins, int Sum)
 {
     int Count = Coins.size();
     vector<vector<bool>> dp(Count + 1, vector<bool>(Sum + 1, false));
